@@ -9,7 +9,7 @@ def home():
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    os.system("cd /home/web-sekolah && git pull")
+    os.system("cd /root/web-sekolah && git pull")
     return "Updated", 200
 
 
